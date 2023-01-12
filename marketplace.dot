@@ -1,0 +1,18 @@
+strict digraph {
+  Listed [shape=hexagon]
+  Canceled [shape=hexagon]
+  End [shape=hexagon]
+  Sold [shape=hexagon]
+  listNft
+  transferFrom
+  canceListorAuction
+  buyNft [color=brown]
+  auction
+  bidding [color=brown]
+  finalizeAuction [color=brown]
+  listNft -> transferFrom
+  listNft -> Listed
+  auction -> transferFrom
+  finalizeAuction -> transferFrom
+}
+
